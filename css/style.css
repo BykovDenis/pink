@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* Bykov DS 07102015 */
+/* ширина основной обертки */
+/* размер шрифта */
+/* высота строки */
+/* семейство шрифта */
+/* цвет текста */
+/* все цвета */
+/* белый цвет */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+body {
+  font: normal 14px/24px "Open Sans", "Arial", "sans serif";
+  color: #283645;
+  width: 100%;
+}
+
+/* задаем общий стиль для всех ссылок */
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* шапка */
+.main-header {
+  background: #263442 url("../img/bg_header.jpg") 0 0 no-repeat;
+  background-size: 1400px 934px;
+  /* обретка */
+  /* логотип */
+  /* панель навигации */
+  /* ссылки пунктов меню */
+  /* пункты меню */
+  /* распорка блоков */
+}
+
+.main-header__layout {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  float: left;
+  width: 140px;
+  height: 40px;
+  padding: 35px 0;
+}
+
+.main-header__navigation {
+  float: right;
+  padding: 45px 0;
+}
+
+.main-header__menu a {
+  color: #fff;
+  font: normal 18px/18px "Open Sans", "Arial", "sans serif";
+}
+
+.main-header__navigation li {
+  display: inline-block;
+  margin-right: 65px;
+}
+
+.main-header__navigation li:last-child {
+  margin-right: 0;
+}
+
+.main-header:after {
+  display: table;
+  content: '';
+  clear: both;
+}

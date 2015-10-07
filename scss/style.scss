@@ -1,0 +1,98 @@
+/* Bykov DS 07102015 */
+
+@import "variables.scss";
+
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+
+body{
+    font: normal #{$font-size}/#{$line-height} $font-family;
+    color: $font-color;
+    width: 100%;
+}
+
+/* задаем общий стиль для всех ссылок */
+
+a{
+    
+    text-decoration:  none;
+
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+    }
+
+}
+
+/* шапка */
+.main-header{
+
+    background: #263442 url("../img/bg_header.jpg") 0 0 no-repeat;                        
+    background-size: 1400px 934px;        
+
+    /* обретка */
+    &__layout{
+
+        width: $main-layout-width;
+        margin: 0 auto;
+
+    }
+
+    /* логотип */
+    &__logo{
+        
+        float: left;
+
+        width: 140px;
+        height: 40px;
+        
+        padding: 35px 0;
+
+    }
+    
+    /* панель навигации */
+    &__navigation{
+        
+        float: right;        
+        
+        padding: 45px 0;
+        
+    }
+
+    /* ссылки пунктов меню */
+    &__menu a{
+
+        color: $white;
+        font: normal #{$font-size-main-menu}/#{$line-height-main-menu} $font-family;
+
+    }
+    
+    /* пункты меню */
+    &__navigation li{
+        
+        display: inline-block;
+        margin-right: 65px;
+        
+    }
+    
+    &__navigation li:last-child{
+        
+        margin-right: 0;
+        
+    }
+    
+    /* распорка блоков */
+
+    &:after{
+
+        display: table;
+        content: '';
+        clear: both;
+    }
+
+}
+
+
