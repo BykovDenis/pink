@@ -1,34 +1,72 @@
+/* общая ширина контента */
+
+$body-width: 1200px;
+
 /* ширина основной обертки */
 
-$main-layout-width: 960px;
+$main-layout-width: 940px;
 
 /* размер шрифта */
 
-$font-size: 14px;
+$font-size: 18px;
+
+$font-size-24: 24px;    
 
 $font-size-main-menu:18px;
+
+$font-size-btn-caption: 21px;
+
+$font-size-symbol: 240px;
+
+$font-size-h1: 50px;
+
+$font-size-h2: 50px;
+
+$font-size-h3: 30px;
+
+$font-size-h4: 24px;
+
+
 
 /* высота строки */
 
 $line-height: 24px;
 
+$line-height-30: 30px;
+
 $line-height-main-menu: 18px;
+
+$line-height-btn-caption: 18px;
+
+$line-height-symbol: 240px;
+
+$line-height-h1: 60px;
+
+$line-height-h2: 60px;
+
+$line-height-h3: 30px;
+
+$line-height-h4: 30px;
 
 /* семейство шрифта */
 
 $font-family: 'Open Sans', 'Arial', 'sans serif';
-
-
-/* цвет текста */
-
-$font-color: #283645;
+$font-family-light: 'Open Sans Light', 'Arial', 'sans serif';
+$font-family-semibold: 'Open Sans SemiBold', 'Arial', 'sans serif';
+$font-family-bold: 'Open Sans Bold', 'Arial', 'sans serif';
+$font-family-symbols: 'Georgia Regular','Arial','sans serif';
 
 /* все цвета */
 
-/* белый цвет */
 
+$blue: #283645;
+$black: #000000;
 $white: #fff;
-
+$gray:  #f2f2f2;
+$gray1:  #e5e5e5;
 $gray-rgba: rgba(0,0,0,.3);
+$light-gray-rgba: rgba(0,0,0,.1);
+$red : #d22856;
+
 
 

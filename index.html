@@ -9,7 +9,7 @@
     </head>
     <body>
     <header class="main-header">
-        <div class="main-header__layout">
+        <div class="main-header__layout clearfix">
             <div class="main-header__logo">
                 <img src="img/img_logo.png" width="146" height="40" alt="logo">
             </div>
@@ -21,7 +21,221 @@
                     <li><a href="#">Стоимость</a></li>
                 </ul>
             </nav>
+        </div>             
+        <div class="main-header__layout clearfix">
+        <section class="promo">            
+                <h1 class="promo__h1">Взгляните на жизнь иначе!</h1>
+                <a class="btn" href="#">Скачать приложение</a>                
+                <ul class="promo__eshop">
+                    <li><i class="promo__mac"></i></li>
+                    <li><i class="promo__android"></i></li>
+                    <li><i class="promo__ms"></i></li>
+                </ul> 
+                <p class="promo__description">
+                   Доступно для iPhone, iPad, Android, 
+                   Windows phone, Mac OS, Windows 8
+                </p>            
+        </section>        
         </div>
     </header>
-    </body>
+    <main class="main-content clearfix">        
+            <article class="information">
+               <div class="information__layout">
+                    <h2 class="information__header">
+                        Устали от серости мегаполиса? Нам есть, что вам <br> предложить!
+                    </h2>
+                    <div class="information__application-effects clearfix">
+                        <div class="application-effect">
+                            <div class="application-effect__preview phone1"></div>
+                            <h3 class="application-effect__header">Поднимает настроение</h3>
+                            <p class="application-effect__content">Приложение позволит вам победить осеннюю хандру и 
+                            деперессию буквально в несколько кликов!</p>                        
+                        </div>    
+                        <div class="application-effect">
+                            <div class="application-effect__preview phone2"></div>
+                            <h3 class="application-effect__header">Меняет мир вокруг</h3>
+                            <p class="application-effect__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, 
+                            чтобы усилить эффект</p>                        
+                        </div>  
+                        <div class="application-effect">
+                            <div class="application-effect__preview phone3"></div>
+                            <h3 class="application-effect__header">Заводит новых друзей</h3>
+                            <p class="application-effect__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями 
+                            и заводите новых</p>                        
+                        </div> 
+                        <div class="application-effect2">                                                         
+                            <h3 class="application-effect2__header">
+                                Эффект на 24 часа!
+                            </h3>
+                            <p class="application-effect2__content">
+                            Британские ученые провели исследования и доказали, 
+                            что положительный эффект от использования приложения длится целые сутки!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="slider clearfix">    
+               <div class="slider__layout">           
+                    <div class="slider__prev">
+                        <a href="#"><i class="icon-prev"></i></a>
+                    </div>               
+                    <div class="slider__content">
+                       <div class="reviews">
+                            <div class="reviews__layout">
+                                <i class="icon-quote"></i>
+                                <p class="reviews__content">Это приложение перевернуло мой мир и позволило по-новому взглянуть 
+                                  на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к 
+                                  выложенной фотографии!
+                                </p>
+                                <h4 class="reviews__name">Николай Петров</h4>
+                                <div class="reviews__info">25 лет, водитель трамвая</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__next">
+                        <a href="#"><i class="icon-next"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+               <div class="price__layout">
+                    <table>
+                        <tr class="price__header">
+                            <th></th>                            
+                            <th>
+                                <div class="price-card">
+                                    <div class="price-card__layout">
+                                        <div class="price-card__header">
+                                            База
+                                        </div>
+                                        <div class="price-card__content">
+                                            1,99 USD
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="price-card">
+                                    <div class="price-card__layout">
+                                        <div class="price-card__hit">                                            
+                                        </div>
+                                        <div class="price-card__header">
+                                            Стандарт
+                                        </div>
+                                        <div class="price-card__content">
+                                            3,99 USD
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="price-card">
+                                    <div class="price-card__layout">
+                                        <div class="price-card__header">
+                                            Анлим
+                                        </div>
+                                        <div class="price-card__content">
+                                            9,99 USD
+                                        </div>
+                                    </div>
+                                </div>    
+                            </th>
+                        </tr>
+                        <tr class="price__content">
+                            <td>Розовый фильтр</td>
+                            <td>
+                                <i class="icon-check"></i>    
+                            </td>
+                            <td>
+                                <i class="icon-cross"></i>    
+                            </td>
+                            <td>
+                                <i class="icon-cross"></i>    
+                            </td>
+                        </tr>
+                        <tr  class="price__content">
+                            <td>Смайлики</td>
+                            <td>
+                                <i class="icon-check"></i>    
+                            </td>
+                            <td>
+                                <i class="icon-check"></i>    
+                            </td>
+                            <td>
+                                <i class="icon-cross"></i>    
+                            </td>
+                        </tr>
+                        <tr  class="price__content">
+                            <td>Комментарии</td>
+                            <td>                                
+                                <i class="icon-check"></i>    
+                            </td>                            
+                            <td>                                
+                                <i class="icon-check"></i>    
+                            </td>                            
+                            <td>                            
+                                <i class="icon-check"></i>    
+                            </td>                            
+                        </tr>                        
+                    </table>
+                </div>
+            </div>
+            <div class="contacts clearfix">
+                <div class="contacts__map" id="map"></div>                                               
+               <section class="contacts__content"> 
+                   <div class="contacts__layout">                                
+                        <h2 class="contacts__header">
+                            Остались вопросы? <br> Свяжитесь с нами!
+                        </h2>                        
+                        <div class="contacts__columns">
+                            <div class="contacts__column">
+                                Звоните:
+                                <div class="contacts__data">
+                                    8 (800) 1000 900
+                                </div>
+                            </div>
+                            <div class="contacts__column">
+                                Приезжайте в гости:
+                                <div class="contacts__data">
+                                    Санкт-Петербург, 
+                                    Невский проспект, д. 20
+                                </div>
+                            </div>
+                            <div class="contacts__column">
+                                Пишите:
+                                <div class="contacts__data">
+                                    hello@pinkapp.ru
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+            </div>
+        </main>            
+        <footer class="main-footer">
+            <div class="main-footer__layout">
+                <div class="main-footer__column">
+                    <i class="main-footer__logo"></i>
+                </div>
+                <div class="main-footer__column">
+                   <div class="main-footer__social">
+                       <i class="icon-twitter"></i>                
+                   </div>
+                   <div class="main-footer__social">
+                        <i class="icon-fb"></i>  
+                   </div>                  
+                   <div class="main-footer__social">
+                       <i class="icon-tube"></i>                
+                   </div>
+                </div>                
+                <div class="main-footer__column">
+                    <div class="main-footer__html">                    
+                </div>                                
+            </div>
+        </footer>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgjyr7w5tXCAn5-3sETmXNDymaDIsy0N8&amp;callback=initMap"
+        async defer></script> 
+        <script src="js/script.js"></script>
+    </body>    
 </html>

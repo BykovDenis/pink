@@ -1,4 +1,4 @@
-/* Bykov DS 07102015 */
+    /* Bykov DS 07102015 */
 
 @import "variables.scss";
 
@@ -7,11 +7,34 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+@font-face{
+    font-family: "Open Sans Light";
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face{
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Open Sans SemiBold";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Georgia Regular";
+    src: url("../fonts/Georgia.ttf");
+}
+
+
+
 
 body{
     font: normal #{$font-size}/#{$line-height} $font-family;
-    color: $font-color;
+    color: $blue;
     width: 100%;
+    position: relative
 }
 
 /* задаем общий стиль для всех ссылок */
@@ -27,17 +50,113 @@ a{
 
 }
 
+
+/* распорка */
+
+.clearfix{    
+    
+    &:after{
+        
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+/* декоративные классы с иконками */
+
+.icon {
+        
+    /* стрелка вперед */
+    &-next{
+        display: inline-block;
+        vertical-align: baseline;
+        width: 22px;
+        height: 42px;
+        background: url("../img/icon_next.png") 0 0 no-repeat;
+    }
+    
+    
+    /* стрелка назад */
+    &-prev{
+        display: inline-block;
+        vertical-align: baseline;
+        width: 22px;
+        height: 42px;
+        background: url("../img/icon_prev.png") 0 0 no-repeat;
+    }
+    
+    
+    /* кавычки */
+    &-quote{
+        display: inline-block;
+        vertical-align: baseline;
+        width: 79px;
+        height: 64px;
+        background: url("../img/icon_quote.png") 0 0 no-repeat;
+            
+    }
+    
+    /* галочка */
+    &-check{
+        display: inline-block;
+        vertical-align: baseline;
+        width: 29px;
+        height: 22px;
+        background: url("../img/icon_check.png") 0 0 no-repeat;
+    }
+    
+    /* крестик */
+    &-cross{
+        display: inline-block;
+        vertical-align: baseline;
+        width: 26px;
+        height: 26px;
+        background: url("../img/icon_cross.png") 0 0 no-repeat;
+    }
+    
+    &-twitter{
+        display: inline-block;
+        vertical-align: middle;
+        width: 47px;
+        height: 47px;        
+        background: url("../img/icon_twitter.png") 50% 50% no-repeat;
+    }
+    
+    &-fb{
+        display: inline-block;
+        vertical-align: middle;
+        width: 47px;
+        height: 47px;  
+        background: url("../img/icon_fb.png") 50% 50% no-repeat;
+    }
+    
+    &-tube{
+        display: inline-block;
+        vertical-align: middle;
+        width: 47px;
+        height: 47px;  
+        background: url("../img/icon_tube.png") 50% 50% no-repeat;
+    }
+}
+
 /* шапка */
 .main-header{
 
-    background: #263442 url("../img/bg_header.jpg") 0 0 no-repeat;                        
-    background-size: 1400px 934px;        
+    background: url("../img/bg_hand.png") 61% 100% no-repeat, #263442 url("../img/bg_header.jpg") 50% 0 no-repeat;                            
+    min-height: 854px;
+    width: $body-width; 
+    margin: 0 auto;  
+    margin-bottom: 80px;
+    
 
-    /* обретка */
+    /* обертка */
     &__layout{
-
-        width: $main-layout-width;
+        
         margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 120px;
+        width: $main-layout-width;        
 
     }
 
@@ -47,17 +166,16 @@ a{
         float: left;
 
         width: 140px;
-        height: 40px;
-        
+        height: 40px;        
         padding: 35px 0;
 
     }
     
     /* панель навигации */
     &__navigation{
-        
-        float: right;        
-        
+                
+        float: right; 
+        margin: 0;
         padding: 45px 0;
         
     }
@@ -66,7 +184,7 @@ a{
     &__menu a{
 
         color: $white;
-        font: normal #{$font-size-main-menu}/#{$line-height-main-menu} $font-family;
+        font: normal #{$font-size-main-menu}/#{$line-height-main-menu} $font-family;        
 
     }
     
@@ -91,8 +209,606 @@ a{
         display: table;
         content: '';
         clear: both;
+    } 
+    
+    
+    
+}
+
+   /* шапка контентная часть */
+    
+    /* промоблок */
+.promo {
+        
+        float: left;
+        width: 320px;
+        padding:0 35px;
+        margin: 0 auto;
+    
+    &__layout{
+        
+        margin: 0 10px;
+        
+    }
+        
+    
+    &__h1{
+        
+        font: normal #{$font-size-h1}/#{$line-height-h1} $font-family;
+        text-align: center;
+        color: $white;      
+        
+    }
+    
+    /* иконки */
+        
+    &__mac{
+        display: inline-block;
+        width: 46px;
+        height: 47px;
+        background: url("../img/icon_apple.png") 0 0 no-repeat;        
+            
+    }
+    
+    &__android{
+        display: inline-block;
+        width: 42px;
+        height: 47px;
+        background: url("../img/icon_android.png") 0 0 no-repeat;        
+            
+    }
+    
+    &__ms{
+        display: inline-block;
+        width: 44px;
+        height: 42px;
+        background: url("../img/icon_ms.png") 0 0 no-repeat;        
+            
+    }    
+    
+    /* ссылки на мобильные приложения */
+    
+    &__eshop{
+        
+        margin: 0 auto;
+        list-style-type: none;  
+        margin-bottom: 63px;
+        
+        li{
+            
+            display: inline-block;
+            vertical-align: middle;     
+            margin: 0;
+            margin-right: 36px;            
+            
+        }
+        
+        li:last-child{
+            
+            margin-right: 0;
+            
+        }
+        
+    }
+    
+    &__description{
+        
+        margin: 0 10px;
+        font: 100 #{$font-size}/#{$line-height}  $font-family-light;
+        color: $white;
+        
+    }
+    
+}
+
+/* кнопка */
+
+.btn{
+    
+    display: block;
+    margin: 0 auto;
+    font: bold #{$font-size-btn-caption}/#{$line-height-btn-caption} $font-family;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 66px;    
+    padding: 20px 0;
+    
+    border: 3px solid $white;
+    border-radius:15px;
+    
+}
+
+
+/* контентный блок страницы */
+
+.main-content{
+    
+    margin: 0 auto;
+    
+    &__layout{
+        
+        margin: 0 auto;
+        padding: 0 10px;
+        width: $main-layout-width;         
+        
+    }   
+    
+}
+
+/* блок информации предложения */
+
+.information{        
+    
+    background: #f2f2f2;    
+
+    &__header{
+        
+        margin: 80px;
+        padding: 0 20px;
+        
+        text-align: center;
+        font: 100 #{$font-size-h2}/#{$line-height-h2} $font-family-light;
+        color: $blue;     
+        
+    }
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;
+        
+    }
+    
+    &__application-effects{
+        
+        >div{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;     
+            margin-bottom: 65px;
+        }
+        
+        >div:nth-child(3){
+            
+            margin-right: 0;
+            
+        }
     }
 
+}
+
+
+/* эффекты от использования приложения */    
+
+.application-effect{    
+    width:  290px;
+    min-height: 555px;    
+    text-align: center;
+
+    
+    &__preview{        
+        
+        display: inline-block;
+        vertical-align: top;        
+        width: 290px;
+        height: 300px;  
+        box-shadow: 0 2px 0 0 rgba(0,0,0,.3);
+        
+        margin-bottom: 60px;
+    }
+    
+    &__preview.phone1{
+        
+        background: 
+        url("../img/img_phone1_content.jpg") 50% 43px no-repeat,
+        url("../img/img_phone.png") 50% 0 no-repeat;  
+    }
+    
+    &__preview.phone2{
+        
+        background: 
+        url("../img/img_phone2_content.jpg") 50% 43px no-repeat,
+        url("../img/img_phone.png") 50% 0 no-repeat;  
+    }
+    
+    &__preview.phone3{
+        
+        background: 
+        url("../img/img_phone3_content.jpg") 50% 43px no-repeat,
+        url("../img/img_phone.png") 50% 0 no-repeat;  
+    }
+    
+    &__header {
+        
+        font: normal #{$font-size-h3}/#{$font-size-h3} $font-family-bold;
+        color: $black;
+        margin:0;        
+        
+    }
+    
+    &__content{
+        
+        font: normal #{$font-size}/#{$line-height} $font-family;
+        color: $blue;
+        padding: 0 30px;        
+        
+    }
+    
+}
+
+
+.application-effect2{    
+    
+    float: right;    
+    padding-top: 105px;
+    padding-bottom: 105px;
+    
+    
+    background: url("../img/img_watch.png") 0 0 no-repeat;
+    
+    &__header {
+        
+        font: normal #{$font-size-h3}/#{$font-size-h3} $font-family-bold;
+        color: $black;
+        
+        margin-bottom: 35px;
+        padding-left: 330px;
+        
+    }    
+    
+    
+    &__content{
+        
+        font: normal #{$font-size}/#{$line-height} $font-family;
+        color: $blue;     
+        padding-left: 330px;
+        
+    }
+    
+    
+}
+
+/* слайдер */
+
+.slider{
+    
+    margin:0;
+    margin-bottom: 35px;
+
+    /* обертка */
+    &__layout{
+        
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 120px;
+        width: $main-layout-width;        
+
+    }
+    
+    &__prev{
+        
+        float: left;
+        padding:130px 0; 
+        margin-right: 90px;
+                
+    }
+    
+    &__content{
+        
+        float: left;
+        margin: 0;
+        
+    }
+    
+    
+    &__next{
+        
+        float: right;  
+        padding:130px 0;
+        margin-left: 90px;
+        
+    }
+    
+}
+
+.reviews{
+    
+    margin: 0 auto;
+    text-align: center;    
+    
+    font: normal #{$font-size}/#{$line-height-30} $font-family;
+    color: $blue;
+    
+    &__layout{
+        
+        margin: 0 auto;
+        padding: 0 10px;  
+        width: 680px;
+        
+    }       
+
+    &__content{
+    
+        text-align: center;
+        margin: 50px 0;
+        
+    }
+    
+    &__name{
+        
+        font: normal #{$font-size-h4}/#{$line-height-h4} $font-family-bold;
+        color: $black;
+        margin: 0;
+        margin-bottom: 10px;
+        
+    }
+}
+
+
+/* прайс-лист */
+
+.price{
+
+    background-color: $gray;
+    font: normal #{$font-size}/#{$line-height-30} $font-family;
+    padding-top: 155px;
+    margin-bottom: 80px;
+    
+    &__layout{
+
+    margin: 0 auto;
+    padding: 0 10px;
+    width: $main-layout-width;    
+    padding-bottom: 95px;
+
+    }   
+    
+    & table{
+        border-collapse: collapse;                
+    }
+    
+    & td,
+    & th{
+        border: 2px solid $gray1;
+        width: 235px;
+        text-align: center;
+    }
+    
+    & td:first-child{
+        
+        text-align: left;        
+    }
+    
+            
+    &__header th:first-child{
+        
+        border:0;
+        
+    }
+    
+
+    &__content td{
+        
+        padding: 10px 0;
+        padding-left: 24px;
+        background-color: $white;
+        
+    }
+}
+
+/* карточка прайса */
+
+.price-card{
+
+    background-color: $blue;
+    color: $white;    
+    text-transform: uppercase;
+    position: relative;
+    
+    &__layout{
+        
+        padding: 25px 0;
+        
+    }
+    
+    &__header{
+        
+        margin: 0 auto;
+        font: normal #{$font-size}/#{$line-height-30} $font-family-bold; 
+        margin-bottom: 5px;
+        
+    }
+    
+    &__content{
+        
+        margin: 0 auto;
+        font: 100 #{$font-size-24}/#{$line-height} $font-family-light;
+        
+    }
+    
+    &__hit{
+        
+        position: absolute;
+        display: inline-block;
+        width: 74px;
+        height: 73px;
+        background: url("../img/img_hit.png") 0 0 no-repeat;
+        top:0;
+        left:0;            
+    }
+    
+}
+
+.contacts{
+    
+    position: relative;
+    width: $body-width;
+    background: $white 470px 0;
+    margin: 0 auto;
+    position: relative;
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;         
+        
+    }
+    
+    &__map{
+                      
+        height: 1060px;   
+        margin: 0 auto;        
+        width: $body-width;
+        
+    }
+    
+    &__content{
+        
+        position: absolute;
+        background: white;
+        width: 100%;
+        top:0;
+        
+    }
+    
+    &__header{
+        
+        margin: 80px;
+        padding: 0 20px;        
+        
+        text-align: center;
+        font: 100 #{$font-size-h2}/#{$line-height-h2} $font-family-light;
+        color: $blue;   
+        
+        
+    }
+    
+    &__column{
+    
+        display: inline-block;
+        vertical-align: top;
+        width: 280px;
+        padding: 0 10px;
+        margin-right:10px;
+        
+        font: normal #{$font-size}/#{$line-height} $font-family-bold;
+        color: $blue;     
+        text-align: center;
+        padding-bottom: 130px;
+        
+    }   
+    
+    &__data{
+        
+        margin-top: 35px;
+        font: 100 #{$font-size-24}/#{$line-height} $font-family-light;
+        color: #d22856;
+        
+    }
+
+    
+}
+
+
+/* подвал */
+
+.main-footer{    
+    
+    width: 100%;
+    min-height: 205px;    
+    position:absolute;
+    background: $white;
+        
+    bottom:0;   
+    margin: 0 auto;    
+    
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        text-align: center;
+        margin: 0 auto;        
+        
+    }
+    
+    &__column{
+        
+        
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        width: 220px;
+        margin-right: 135px;
+        font-size: 0;
+        height: 50px;
+        padding: 77px 0;
+        
+    }
+
+    &__column:last-child{
+        
+        margin-right: 0;
+        
+    }
+    
+    
+    /* логотип */
+    &__logo{        
+        
+        display: inline-block;
+        width: 146px;
+        height: 40px;        
+        background: url("../img/img_logo1.png") 0 0 no-repeat;
+        margin:0;
+        padding: 0;  
+        text-align: left;        
+
+    }
+    
+    &__social{
+        
+        display: inline-block;
+        width: 47px;
+        height: 47px;
+        border:3px solid $light-gray-rgba;
+        border-radius: 25px;
+        margin-right: 12px;
+        
+        text-align: center;
+        vertical-align: middle;        
+        
+    }
+    
+    &__social:last-child{
+        
+        margin-right: 0;
+        
+    }
+    
+    &__html{
+        
+        display: inline-block;
+        width: 208px;
+        height: 33px;
+        background: url("../img/img_htmlacademy.png")  0 0 no-repeat;
+    }
+    
+}
+
+
+
+/* форматирование условное */
+
+
+.l1{
+    outline: 1px solid #0f0;
+    background: rgba(160,240,160,0.4);    
+}
+
+.l2{
+    outline: 1px solid #00f;
+    background: rgba(160,160,240,0.4);    
 }
 
 
