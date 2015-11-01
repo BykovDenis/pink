@@ -9,6 +9,8 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.ttf");
+  font-size: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -36,6 +38,9 @@ body {
   color: #283645;
   width: 100%;
   position: relative;
+  min-width: 1095px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* задаем общий стиль для всех ссылок */
@@ -130,37 +135,43 @@ a:focus {
 
 /* шапка */
 .main-header {
-  background: url("../img/bg_hand.png") 61% 100% no-repeat, #263442 url("../img/bg_header.jpg") 50% 0 no-repeat;
+  background: url("../img/bg_hand.png") 74.5% 100% no-repeat, #263442 url("../img/bg_header.jpg") 50% 0 no-repeat;
   min-height: 854px;
-  width: 1200px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  width: 100%;
   /* обертка */
-  /* логотип */
   /* панель навигации */
+  /* логотип */
   /* ссылки пунктов меню */
   /* пункты меню */
   /* распорка блоков */
 }
 
-.main-header__layout {
-  margin: 0 auto;
-  padding: 0 10px;
-  margin-bottom: 120px;
-  width: 940px;
+.main-header__menu {
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.main-header__logo {
-  float: left;
-  width: 140px;
-  height: 40px;
-  padding: 35px 0;
+.main-header__layout {
+  margin: 0 10%;
+  padding: 0 0.8%;
+  width: 78.4%;
+  margin-bottom: 104px;
 }
 
 .main-header__navigation {
   float: right;
   margin: 0;
   padding: 45px 0;
+  position: relative;
+  width: 70%;
+  text-align: right;
+}
+
+.main-header__logo {
+  float: left;
+  width: 140px;
+  height: 40px;
+  padding: 29px 0;
 }
 
 .main-header__menu a {
@@ -170,7 +181,8 @@ a:focus {
 
 .main-header__navigation li {
   display: inline-block;
-  margin-right: 65px;
+  vertical-align: top;
+  margin-right: 10%;
 }
 
 .main-header__navigation li:last-child {
@@ -187,8 +199,8 @@ a:focus {
 /* промоблок */
 .promo {
   float: left;
-  width: 320px;
-  padding: 0 35px;
+  width: 32.6%;
+  padding: 0 2.9px;
   margin: 0 auto;
   /* иконки */
   /* ссылки на мобильные приложения */
@@ -202,6 +214,8 @@ a:focus {
   font: normal 50px/60px "Open Sans", "Arial", "sans serif";
   text-align: center;
   color: #fff;
+  margin: 0;
+  margin-bottom: 53px;
 }
 
 .promo__mac {
@@ -251,15 +265,16 @@ a:focus {
 /* кнопка */
 .btn {
   display: block;
-  margin: 0 auto;
   font: bold 21px/18px "Open Sans", "Arial", "sans serif";
   color: #fff;
   text-align: center;
   text-decoration: none;
+  width: 300px;
+  margin: 0 auto;
   margin-bottom: 66px;
-  padding: 20px 0;
+  padding: 14px 0;
   border: 3px solid #fff;
-  border-radius: 15px;
+  border-radius: 28px;
 }
 
 /* контентный блок страницы */
@@ -270,7 +285,7 @@ a:focus {
 .main-content__layout {
   margin: 0 auto;
   padding: 0 10px;
-  width: 940px;
+  width: 78.4%;
 }
 
 /* блок информации предложения */
@@ -278,23 +293,23 @@ a:focus {
   background: #f2f2f2;
 }
 
+.information__layout {
+  width: 78.4%;
+  margin: 0 auto;
+}
+
 .information__header {
-  margin: 80px;
-  padding: 0 20px;
+  margin: 60px 8.51% 70px;
+  padding: 0 1.67%;
   text-align: center;
   font: 100 50px/60px "Open Sans Light", "Arial", "sans serif";
   color: #283645;
 }
 
-.information__layout {
-  width: 940px;
-  margin: 0 auto;
-}
-
 .information__application-effects > div {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 2.98%;
   margin-bottom: 65px;
 }
 
@@ -304,7 +319,7 @@ a:focus {
 
 /* эффекты от использования приложения */
 .application-effect {
-  width: 290px;
+  width: 30.85%;
   min-height: 555px;
   text-align: center;
 }
@@ -312,7 +327,7 @@ a:focus {
 .application-effect__preview {
   display: inline-block;
   vertical-align: top;
-  width: 290px;
+  width: 100%;
   height: 300px;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.3);
   margin-bottom: 60px;
@@ -333,64 +348,73 @@ a:focus {
 .application-effect__header {
   font: normal 30px/30px "Open Sans Bold", "Arial", "sans serif";
   color: #000000;
-  margin: 0;
+  margin: 0 8.5%;
+  margin-bottom: 30px;
 }
 
 .application-effect__content {
-  font: normal 18px/24px "Open Sans", "Arial", "sans serif";
+  font: normal 18px/30px "Open Sans", "Arial", "sans serif";
   color: #283645;
-  padding: 0 30px;
+  margin: 0 8.5%;
 }
 
 .application-effect2 {
   float: right;
-  padding-top: 105px;
-  padding-bottom: 105px;
+  padding-top: 91px;
+  padding-bottom: 50px;
+  font: normal 18px/30px "Open Sans", "Arial", "sans serif";
+  padding-left: 39%;
   background: url("../img/img_watch.png") 0 0 no-repeat;
 }
 
 .application-effect2__header {
   font: normal 30px/30px "Open Sans Bold", "Arial", "sans serif";
   color: #000000;
-  margin-bottom: 35px;
-  padding-left: 330px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .application-effect2__content {
-  font: normal 18px/24px "Open Sans", "Arial", "sans serif";
   color: #283645;
-  padding-left: 330px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.application-effect2__about a {
+  color: #d22856;
+  text-decoration: underline;
 }
 
 /* слайдер */
 .slider {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   /* обертка */
 }
 
 .slider__layout {
   margin: 0 auto;
-  padding: 0 10px;
-  margin-bottom: 120px;
-  width: 940px;
+  padding: 0 0.83%;
+  margin-bottom: 60px;
+  width: 78.4%;
 }
 
 .slider__prev {
   float: left;
-  padding: 130px 0;
-  margin-right: 90px;
+  padding: 146px 0;
+  margin-right: 9.57%;
 }
 
 .slider__content {
   float: left;
   margin: 0;
+  width: 72.34%;
 }
 
 .slider__next {
   float: right;
-  padding: 130px 0;
-  margin-left: 90px;
+  padding: 146px 0;
+  margin-left: 9.57%;
 }
 
 .reviews {
@@ -402,34 +426,32 @@ a:focus {
 
 .reviews__layout {
   margin: 0 auto;
-  padding: 0 10px;
-  width: 680px;
+  padding: 0 0.83%;
+  width: 100%;
 }
 
 .reviews__content {
   text-align: center;
-  margin: 50px 0;
+  margin: 48px 0 38px;
 }
 
 .reviews__name {
   font: normal 24px/30px "Open Sans Bold", "Arial", "sans serif";
   color: #000000;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 /* прайс-лист */
 .price {
   background-color: #f2f2f2;
   font: normal 18px/30px "Open Sans", "Arial", "sans serif";
-  padding-top: 155px;
-  margin-bottom: 80px;
+  padding-top: 150px;
 }
 
 .price__layout {
   margin: 0 auto;
-  padding: 0 10px;
-  width: 940px;
+  padding: 0 0.83%;
+  width: 78.4%;
   padding-bottom: 95px;
 }
 
@@ -453,8 +475,7 @@ a:focus {
 }
 
 .price__content td {
-  padding: 10px 0;
-  padding-left: 24px;
+  padding: 13px 0;
   background-color: #fff;
 }
 
@@ -467,7 +488,7 @@ a:focus {
 }
 
 .price-card__layout {
-  padding: 25px 0;
+  padding: 20px 0;
 }
 
 .price-card__header {
@@ -500,12 +521,12 @@ a:focus {
 }
 
 .contacts__layout {
-  width: 940px;
+  width: 78.4%;
   margin: 0 auto;
 }
 
 .contacts__map {
-  height: 1060px;
+  height: 1070px;
   margin: 0 auto;
   width: 1200px;
 }
@@ -518,8 +539,8 @@ a:focus {
 }
 
 .contacts__header {
-  margin: 80px;
-  padding: 0 20px;
+  margin: 60px 6.38%;
+  padding: 0 2.13%;
   text-align: center;
   font: 100 50px/60px "Open Sans Light", "Arial", "sans serif";
   color: #283645;
@@ -528,9 +549,9 @@ a:focus {
 .contacts__column {
   display: inline-block;
   vertical-align: top;
-  width: 280px;
-  padding: 0 10px;
-  margin-right: 10px;
+  width: 29.79%;
+  padding: 0 1.06%;
+  margin-right: 1.06%;
   font: normal 18px/24px "Open Sans Bold", "Arial", "sans serif";
   color: #283645;
   text-align: center;
@@ -538,7 +559,7 @@ a:focus {
 }
 
 .contacts__data {
-  margin-top: 35px;
+  margin-top: 25px;
   font: 100 24px/24px "Open Sans Light", "Arial", "sans serif";
   color: #d22856;
 }
@@ -555,24 +576,30 @@ a:focus {
 }
 
 .main-footer__layout {
-  width: 940px;
-  text-align: center;
+  width: 78.4%;
+  text-align: left;
   margin: 0 auto;
 }
 
 .main-footer__column {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  width: 220px;
-  margin-right: 135px;
-  font-size: 0;
+  width: 23%;
   height: 50px;
-  padding: 77px 0;
+}
+
+.main-footer__column:first-child {
+  float: left;
+  margin-right: 17%;
+  padding: 82px 0;
+}
+
+.main-footer__column:nth-child(2) {
+  float: left;
+  padding: 82px 0;
 }
 
 .main-footer__column:last-child {
-  margin-right: 0;
+  float: right;
+  padding: 81px 0 66px;
 }
 
 .main-footer__logo {
@@ -591,7 +618,7 @@ a:focus {
   height: 47px;
   border: 3px solid rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  margin-right: 12px;
+  margin-right: 1.2%;
   text-align: center;
   vertical-align: middle;
 }
